@@ -1,0 +1,25 @@
+@media (min-width: 992px){
+    .pl-lg-7 {
+        padding-left: 7rem !important;
+    }
+}
+
+@media (min-width: 768px){
+    .pb-md-7 {
+        padding-bottom: 7rem !important;
+    }
+}
+
+
+@media (min-width: 992px){
+    .pr-lg-7 {
+        padding-right: 7rem !important;
+    }
+}
+
+@media (min-width: 576px){
+    .padding_cuadros {
+        padding-right: 150px!important;
+        padding-left: 150px!important;
+    }
+}

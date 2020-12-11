@@ -1,0 +1,102 @@
+.row-bordered {
+  background-color: #c7defe;
+}
+
+.logo {
+  width: 50px;
+  transform: rotate(-45deg);
+}
+
+.cuadro {
+  border-radius: 1rem !important;
+  padding: 1.5rem !important;
+}
+
+.animOpacity {
+  opacity: 0;
+}
+
+.bg-pink {
+  background-color: #e643ae;
+}
+
+.rombito {
+  transform: rotate(45deg);
+  margin-top: 15px;
+  margin-bottom: 25px;
+  width: 20px;
+  height: 20px;
+}
+
+.fondo {
+  background-image: url("../material/fondo_forma.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.padding_cuadros {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.margin-custom {
+  margin-top: 3rem !important;
+}
+
+.poppins {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.bola {
+  width: 50px;
+  height: 50px;
+  border: 2px solid gray;
+}
+
+.iconoInvertido {
+  transform: rotateY(180deg);
+}
+.celInvertido {
+  transform: rotateY(180deg);
+}
+.pb-7 {
+  padding-bottom: 7rem !important;
+}
+
+path {
+  fill: red;
+}
+.fondo-footer {
+  background-color: #3880e4;
+  padding-top: 13rem !important;
+}
+
+.animacion {
+  opacity: 0;
+}
+
+#icono {
+  display: none;
+}
+
+.ancho1 {
+  width: 90%;
+}
+
+.showOpacityText {
+  opacity: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:before {
+  content: "\2BC8";
+  display: inline-block;
+  margin: 0 5px 0 -15px;
+}

@@ -1,0 +1,45 @@
+
+.Boom {
+    animation-duration: 1s;
+    animation-name: kaboom;
+    transform-origin: center center;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+.Boom:nth-child(1) {
+    animation-delay: 0.9s;
+}
+.Boom:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+
+@keyframes kaboom {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.0);
+        opacity: 1.0;
+    }
+}
+
+
+
+.showWithOpacity{
+    animation-duration: 2s;
+    animation-name: opacityZoom;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacityZoom{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}
+

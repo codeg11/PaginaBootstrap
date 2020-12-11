@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<?xml-stylesheet type="text/css" href="../css/animation.css" ?>
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="537.91px" height="766px" viewBox="0 0 537.91 766" enable-background="new 0 0 537.91 766" xml:space="preserve">
+	 
+   
+<g>
+	<polygon id="circulo" fill="#3880E4" class="Boom" points="0,6 537.91,160 537.91,652 0,752"/>
+	<path fill="#4D8DE7" class="Boom" d="M537.91,159.165L312.7,94.689C180.551,135.002,84.41,257.872,84.41,403.21
+		c0,132.64,80.08,246.561,194.521,296.101l258.979-48.146V159.165z"/>
+	<path fill="#5F9AEA"  class="Boom" d="M376.716,220.522c-102.179,0-185.011,82.593-185.011,184.478c0,101.883,82.832,184.478,185.011,184.478
+		c69.159,0,129.445-37.844,161.194-93.891V314.412C506.161,258.366,445.875,220.522,376.716,220.522z"/>
+</g>
+</svg>
