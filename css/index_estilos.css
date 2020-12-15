@@ -16,6 +16,8 @@
   opacity: 0;
 }
 
+
+
 .bg-pink {
   background-color: #e643ae;
 }
@@ -99,4 +101,8 @@ li:before {
   content: "\2BC8";
   display: inline-block;
   margin: 0 5px 0 -15px;
+}
+
+.fs-6 {
+  font-size: .5rem!important;
 }

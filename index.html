@@ -4,17 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="css/index_estilos.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/animation.css" rel="stylesheet"/>
     <link href="css/waves.css" rel="stylesheet" />
     <link href="css/media_Q.css" rel="stylesheet" />
-    <link href="css/index_estilos.css" rel="stylesheet">
   </head>
-  <style>
-
-  </style>
-
-
+  
   <body>
     <!-- svg rombo -->
     <svg
@@ -157,7 +153,7 @@
         </div>
       </div>
       <div class="row align-items-center" style="background-color: #e6ecf0">
-        <div class="col-7">
+        <div class="col-12 col-sm-8 col-md-7">
           <div class="row">
             <div class="col-7 px-0">
               <object type="image/svg+xml" class="img-fluid forma"></object>  
@@ -167,10 +163,10 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-4 d-none d-sm-block col-md-3 col-md-3">
           <img src="img/cel3.png" class="img-fluid animacion" />
         </div>
-        <div class="col-2">
+        <div class="d-none d-md-block col-2">
           <img src="img/cel2.png" class="img-fluid animacion" />
         </div>
         <div class="col-12 px-0">
@@ -208,7 +204,7 @@
         </div>
         <div class="col-12 text-center text-lg-right my-4 col-lg-5 order-1 order-lg-2 showOpacityText">
           <h2>POPPINS</h2>
-          <p class="fs-6 fs-md-4 mt-4">
+          <p class="mt-4 fontSR">
             ABCDEFGHILJKLMNOPQRSTUVWXYZ <br>
             abcdefghijklmnopqrstuvwxyz
             123456789!@#$%^/*""
@@ -325,7 +321,7 @@
 
       <!-- little footer -->
 
-      <div class="row px-5 mx-5 justify-content-center" style="height: 200px;">
+      <div class="row px-2 mx-2 px-md-5 mx-md-5 justify-content-center" style="height: 200px;">
         <p class="col-auto text-center my-auto">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. At perspiciatis dolorum, sit, quos fugit explicabo maxime optio incidunt mollitia ipsa iusto dolore eum, qui debitis amet aliquam voluptas quisquam magni ab fuga facilis nemo nihil. Omnis laborum, pariatur facilis, doloribus esse iure autem vitae illum voluptate, consectetur deleniti nesciunt sit!
         </p>
@@ -338,7 +334,7 @@
     <script type="text/javascript">
       Waves.attach('.cuadro');
       Waves.init();
-  
+      
       window.onscroll = function(e){   
         animateOpacityTC()
         animateSquare()
@@ -346,7 +342,7 @@
         poppins()
         celulares()
       }
-
+      
       //efecto con el scroll de opacidad de textos y demas elementos
       var contOpacityTextandCels = 0;
       var opacytyTextyCels = document.getElementsByClassName("showOpacityText")
@@ -373,9 +369,16 @@
       var opacityAnimacion = document.getElementsByClassName("animOpacity")
       function animateSquare(){
         if(contOpacity < opacityAnimacion.length){
-          if(window.scrollY >= opacityAnimacion[0].offsetTop-500){
+          if(window.scrollY >= opacityAnimacion[0].offsetTop-500 && window.innerWidth > 992){
             for(contOpacity;contOpacity<opacityAnimacion.length;contOpacity++){
               setOpacity(contOpacity)
+            }
+          }
+          else{
+            if(window.scrollY >= opacityAnimacion[contOpacity].offsetTop-200){
+              var clases = opacityAnimacion[contOpacity].getAttribute("class")
+              opacityAnimacion[contOpacity].setAttribute("class",clases+" showWithOpacity")
+              contOpacity++
             }
           }
         }
