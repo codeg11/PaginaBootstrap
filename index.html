@@ -28,7 +28,7 @@
   </svg>
   <!-- end svg rombo -->
 
-    <div class="container-fluid">
+    <div id="content" class="container-fluid">
       <!-- section 1-->
       <div class="row row-cols-1 row-cols-lg-2 align-items-center row-bordered">
         <div class="col mt-5 mt-lg-0 pl-lg-5 text-center text-lg-left">
@@ -331,17 +331,34 @@
 
        <!-- little footer -->
     </div>
+    
+    <div id="spinner" class="container">
+      <div class="row justify-content-center w-100">
+        <div class="col-auto">
+          <div class="spinner-border text-primary" style="width: 10rem; height: 10rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/waves.js"></script>
     <script type="text/javascript">
       Waves.attach('.cuadro');
       Waves.init();
 
+      //show spinner loading
 
+      document.getElementById("spinner").style.display = "flex";
+      document.getElementById("content").style.display = "none";
+
+      
       window.onload = function(){
-
-        alert("hola cargo")
+        document.getElementById("spinner").style.display = "none";
+        document.getElementById("content").style.display = "block";
       }
+
       window.onscroll = function(e){   
         animateOpacityTC()
         animateSquare()

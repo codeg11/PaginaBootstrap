@@ -81,6 +81,12 @@ path {
   opacity: 0;
 }
 
+#spinner{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
 #icono {
   display: none;
 }
