@@ -355,8 +355,10 @@
 
       
       window.onload = function(){
-        document.getElementById("spinner").style.display = "none";
-        document.getElementById("content").style.display = "block";
+        setTimeout(()=>{
+          document.getElementById("spinner").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        },2000)
       }
 
       window.onscroll = function(e){   
